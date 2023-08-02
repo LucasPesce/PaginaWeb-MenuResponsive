@@ -1,0 +1,52 @@
+/*  INDEX   */
+    /*    MOBIL    */
+    @media only screen and (max-width: 480px) {     
+        .categoriaSubtitulo{
+            justify-content:center;             /* Centrar elemento   */
+        }
+
+        .categoriasLista{
+            flex-direction: column;
+            margin: 0 0 1rem 0;      /* Margenes de las categorias como grupo*/
+        }
+        .imagenCategoria{
+            margin: 0rem 1rem 1rem 1rem;
+            width: 85%;
+            height: 7rem;
+        }
+
+        .footerLogo{
+            display: none;                      /* Borra imagen */
+        }
+        .ItemRedes{
+            margin: 1rem 1rem 0 1rem;                
+        }
+        .brandLogo{
+            display: none;
+        }
+    }
+
+    /*      TABLET      */
+    @media only screen and (min-width: 481px) and ((max-width: 1024px))  {  
+        .categoriaSubtitulo{
+            margin: 6rem 4rem 2rem 4rem;       /*TOP-RIGHT-BOT-LEFT*/
+        }
+
+        .categoriasLista{
+            flex-direction: column;
+            margin: 0 0 1rem 0;      /* Margenes de las categorias como grupo*/
+        }
+        .imagenCategoria{
+            margin: 0rem 1rem 1rem 1rem;
+            width: 80%;
+            height: 7rem;
+        }
+
+        .footerLogo{
+            display: none;                      /* Borra imagen */
+        }
+
+        .ItemRedes{
+            margin: 1rem 1rem 0 1rem;                
+        }
+    }

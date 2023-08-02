@@ -1,0 +1,184 @@
+/*  BASES - PALETA DE COLORES */
+colores {   
+    color: #d01816;/*ROJO FONDO*/
+    color: black; /*LETRA*/
+    color: white;/*LETRA*/
+    font-family: 'Oswald', sans-serif;/* 200/600  */
+    font-family: 'Roboto', sans-serif; /* 100/400/700 */    
+}
+/*  INDEX    */
+    /*  HEADER   */
+    .headerPrincipal .container{
+        background-color: #d01816;  /*Color del encabezado*/
+        display: flex;                /*Elemento uno al lado del otro*/
+        align-items: center;
+        height: 3rem;
+        padding: 0.5rem 1rem;
+        position: fixed;             /*Fija el elemento, ignorando el scroll */
+        top: 0;                      /*Posiciona el elemento fijado*/
+        left: 0;                     /*Posiciona el elemento fijado*/
+        width: 100%;                 /*Configura el ancho del encabezado*/
+        z-index: 9999;               /*Prioriza la visualizacion del elemento por sobre los demas*/
+    }
+    .headerLogo{
+        width: 3.5rem;
+        height: 3.5rem;
+        margin: 0 1rem;
+    }
+    .headerMarca{
+        text-transform: uppercase;           /*  Todo en Mayuscula*/
+        font-family: 'Oswald', sans-serif;  
+        font-weight: 600;                   /*  Tamaño fuente de letra*/
+        color: white;                     /*  Color de la LETRA*/
+        font-size: 2rem;                    /*  Tamaño Letra   */
+        text-decoration: none;              /*  Quita Subrayado    */
+    }
+
+    #botonMenu{
+        width: 2rem;
+        margin-left: auto;                /* Coloca el icono en el extremo derecho */
+        padding: 0 3rem;
+    }
+
+
+
+    /*  BODY    */
+    body {
+        background: linear-gradient(#ffffff, #444444);/*  Fondo con gradiente */   
+    }
+
+    .categoriaSubtitulo{
+        display: flex;
+        justify-content:left;             /* Centrar elemento   */
+        text-transform: uppercase;           /*  Todo en Mayuscula*/
+        color: black;
+        font-family: 'Oswald', sans-serif;        
+        font-weight: 600;
+        font-size: 1.5rem;
+        margin: 6rem 8rem 2rem 8rem;       /*TOP-RIGHT-BOT-LEFT*/
+    }
+
+    .categoriasLista{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 3rem 10rem 10rem 10rem;      /* Margenes de las categorias como grupo*/
+        list-style: none;               /* Elimina los puntos de los items*/
+    }
+
+    .categoriaItem{
+        position: relative;             /*  Posiciona el elemente considerando los otros elementos*/
+        display: inline-block;
+        text-align: center;
+    }
+
+    .nombreCategoria{
+        color:white;
+        font-family: 'Oswald', sans-serif;
+        font-weight: 600;
+        font-size: 1.5rem;
+        position: absolute;                 /* Posiciona el elemento ignorando los otros */
+        top: 45%;                           /* Posiciona el elemento a la mitad verticalemnte */
+        left: 50%;                          /* Posiciona el elemento a la mitad horizontalmente */
+        transform: translate(-50%, -50%);   /* Centra el elemento al centro de la imagen*/
+        z-index: 10;                        /* Da prioridad jerarquica para que el filtro de la imagen no oculte el texto */
+    }
+ 
+    .imagenCategoria{
+        width: 20rem;
+        height: 10rem;
+        margin: 1rem;
+        object-fit: cover;                  /*  Mantiene el aspecto original adaptandose el contenedor  */
+        border-radius: 20px;                /*  Redondea los bordes de la imagen*/
+        filter: brightness(0.55);            /*  Oscurece el brillo de la imagen */
+    }
+
+    /*  FOOTER    */
+    .pieDePagina .container{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .pieDePagina{
+        background-image: url(/Img/FONDOGRIS.png);
+    }
+
+    .SiguenosRedes{
+        margin: 2rem 1rem 2rem 1rem;
+    }
+
+    .footerLogo{
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+    .tituloFooter{
+        color: black;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 1.5rem;
+        display: inline-block;
+        vertical-align: top;
+        margin: 1.2rem 0.5rem 0 0.5rem; 
+    }
+
+    .ListaRedes{
+        display: flex;                
+        justify-content: center;
+        margin: auto;
+    }
+
+    .ItemRedes{
+        margin: 0 1rem 0 1rem;                
+    }
+
+    .iconoRedes{
+        width: 2rem;
+        height: 2rem;               
+    }
+    
+
+    .divider{                                   /* Crea una linea divisoria */
+        margin: 0 0 1rem 0;
+        width: 100%;
+        border-bottom: 0.15rem solid gray;
+
+    }
+    
+
+    .listLink{
+        display: inline-flex;
+        margin: 1rem;
+    }
+
+    .itemLink{    
+        margin: 0 1rem 0.5rem 1rem;
+    }
+
+    .Link{
+        text-decoration: none;
+        color: black;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 0.7rem;
+    }
+
+    .brand {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+     
+    .brandLogo{
+        width: 1.5rem;
+        height: 1.5rem;
+        margin: 0 0.5rem 1rem 0;
+    }
+                
+    .copy{
+        color: black;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 0.7rem;
+        margin: 0.5rem 0 0.5rem 0;
+    }
